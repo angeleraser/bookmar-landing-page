@@ -1,0 +1,16 @@
+:root {
+	/* Primary */
+	--soft-blue: hsl(231, 69%, 60%);
+	--soft-red: hsl(0, 94%, 66%);
+
+	/* Neutral */
+	--grayish-blue: hsl(229, 8%, 60%);
+	--very-dark-blue: hsl(229, 31%, 21%);
+
+	/* Font weights */
+	--fw-normal: 400;
+	--fw-bold: 500;
+
+	/* Font family */
+	--ff-rubik: 'Rubik', sans-serif;
+}
