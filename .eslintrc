@@ -18,14 +18,9 @@
 		"eslint:recommended",
 		"plugin:prettier/recommended" // Make this the last element so prettier config overrides other formatting rules
 	],
+	"plugins": ["@vue", "prettier"],
 	"rules": {
-		"prettier/prettier": [
-			"error",
-			{ "endOfLine": "auto" },
-			{ "usePrettierrc": true }
-		],
+		"prettier/prettier": ["error", { "usePrettierrc": true }],
 		"no-unused-vars": ["off", { "vars": "all", "args": "after-used" }]
-	},
-
-	"plugins": ["prettier"]
+	}
 }
