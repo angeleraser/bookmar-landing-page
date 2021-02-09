@@ -5,7 +5,9 @@
 
 	/* Neutral */
 	--grayish-blue: hsl(229, 8%, 60%);
+	--white: #ffffff;
 	--very-dark-blue: hsl(229, 31%, 21%);
+	--very-dark-blue-alpha: hsla(229, 31%, 21%, 0.9);
 
 	/* Font weights */
 	--fw-normal: 400;
