@@ -75,7 +75,7 @@
 			<li><a href="#">Pricing</a></li>
 			<li><a href="#">Contacts</a></li>
 			<li>
-				<button-base class="login-button" :color="'normal'">Login</button-base>
+				<button-base :color="'normal'">Login</button-base>
 			</li>
 			<li class="social-links">
 				<a href="#" target="_blank" rel="noopener noreferrer"
@@ -175,8 +175,11 @@ export default {
 	text-transform: uppercase;
 }
 
-.nav .login-button {
+.nav .button-base.normal {
 	width: 100%;
+	background-color: transparent;
+	border-color: var(--white);
+	color: var(--white);
 }
 
 .nav .menu-items .social-links {
@@ -240,13 +243,13 @@ export default {
 		fill: #242a45;
 	}
 
-	.nav .login-button {
+	.nav .button-base.normal {
 		background-color: var(--soft-red);
 		border-color: var(--soft-red);
 		color: var(--white);
 	}
 
-	.nav .login-button:hover {
+	.nav .button-base.normal:hover {
 		background-color: var(--white);
 		color: var(--soft-red);
 	}

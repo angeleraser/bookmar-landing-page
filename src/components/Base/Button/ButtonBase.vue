@@ -27,9 +27,10 @@ export default {
 <style scoped>
 .button-base {
 	align-items: center;
-	border-radius: 4px;
+	border-radius: 6px;
 	border-style: solid;
 	border-width: 2px;
+	box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
 	display: inline-flex;
 	font-family: 'Rubik', sans-serif;
 	font-weight: var(--fw-bold);
@@ -46,8 +47,9 @@ export default {
 }
 
 .button-base.normal {
+	background-color: transparent;
+	border-color: var(--white);
 	color: var(--white);
-	border-color: currentColor;
 }
 
 .button-base.red {
