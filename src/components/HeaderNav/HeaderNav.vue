@@ -1,5 +1,5 @@
 <template>
-	<nav class="nav">
+	<nav :class="{ fixed: isMenuOpen }" class="nav">
 		<!-- App logo link  -->
 		<a href="#" :class="{ fixed: isMenuOpen }" class="app-logo">
 			<svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -136,6 +136,10 @@ export default {
 	width: 100%;
 }
 
+.nav.fixed {
+	padding: 48px 32px;
+}
+
 .nav .app-logo {
 	display: inline-flex;
 	z-index: 10;
@@ -143,6 +147,8 @@ export default {
 
 .nav .app-logo.fixed {
 	position: fixed;
+	top: 38px;
+	left: 32px;
 }
 
 .nav .menu-items {
