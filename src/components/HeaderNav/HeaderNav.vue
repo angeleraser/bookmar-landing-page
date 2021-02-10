@@ -74,7 +74,7 @@
 			<li><a href="#">Features</a></li>
 			<li><a href="#">Pricing</a></li>
 			<li><a href="#">Contacts</a></li>
-			<li>
+			<li class="login-button">
 				<button-base :color="'normal'">Login</button-base>
 			</li>
 			<li class="social-links">
@@ -252,6 +252,9 @@ export default {
 	.nav .button-base.normal:hover {
 		background-color: var(--white);
 		color: var(--soft-red);
+	}
+	.nav .menu-items li.login-button {
+		margin-right: 0;
 	}
 }
 
