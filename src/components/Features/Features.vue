@@ -1,0 +1,58 @@
+<template>
+	<section class="features-wrapper">
+		<header>
+			<h1>Features</h1>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+				vero, eos harum minus earum repellendus qui aspernatur quos et!
+				Recusandae, quidem expedita?
+			</p>
+		</header>
+	</section>
+</template>
+
+<script>
+export default {
+	name: 'Features',
+};
+</script>
+
+<style scoped>
+.features-wrapper {
+	font-family: var(--ff-rubik);
+	width: 100%;
+}
+
+.features-wrapper header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 44px;
+	padding: 0 32px;
+	text-align: center;
+	width: 100%;
+}
+
+.features-wrapper header h1 {
+	color: var(--very-dark-blue);
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 12px;
+	text-transform: capitalize;
+}
+
+.features-wrapper header p {
+	color: var(--grayish-blue);
+	line-height: 1.7;
+	max-width: 528px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+	.features-wrapper header h1 {
+		font-size: 32px;
+	}
+}
+</style>
