@@ -18,10 +18,11 @@
 </template>
 
 <script>
+import ButtonBase from '../Base/Button/ButtonBase.vue';
 import Illustration from '../Illustration/Illustration.vue';
 export default {
 	name: 'HeaderSection',
-	components: { Illustration },
+	components: { Illustration, ButtonBase },
 	data() {
 		return {
 			illustrationPosition: 'left',
