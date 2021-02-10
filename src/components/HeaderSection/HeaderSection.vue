@@ -54,6 +54,7 @@ export default {
 	margin: 100px 0 0;
 	padding: 0 32px;
 	text-align: center;
+	align-items: center;
 }
 
 .section-info h1 {

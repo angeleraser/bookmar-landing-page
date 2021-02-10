@@ -190,6 +190,8 @@ export default {
 	background-color: transparent;
 	border-color: var(--white);
 	color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .nav .menu-items .social-links {
@@ -214,6 +216,10 @@ export default {
 @media screen and (min-width: 768px) {
 	.nav {
 		padding: 44px;
+	}
+
+	.nav .app-logo.fixed {
+		position: static;
 	}
 
 	.nav .menu-items .social-links {
