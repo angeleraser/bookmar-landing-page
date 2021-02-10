@@ -68,7 +68,13 @@ export default {
 	min-width: 162px;
 	padding: 22px 0;
 	position: relative;
+	transition: color 0.4s ease;
 }
+
+.features-tab-panel li button:hover {
+	color: var(--soft-red);
+}
+
 .features-tab-panel li button::after {
 	background-color: var(--soft-red);
 	bottom: 0;
