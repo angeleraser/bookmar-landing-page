@@ -1,7 +1,7 @@
 <template>
 	<nav class="nav">
 		<!-- App logo link  -->
-		<a href="#" class="app-logo">
+		<a href="#" :class="{ fixed: isMenuOpen }" class="app-logo">
 			<svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
 				<g fill="none" fill-rule="evenodd">
 					<path
@@ -139,6 +139,10 @@ export default {
 .nav .app-logo {
 	display: inline-flex;
 	z-index: 10;
+}
+
+.nav .app-logo.fixed {
+	position: fixed;
 }
 
 .nav .menu-items {
@@ -279,6 +283,10 @@ export default {
 
 	.nav .menu-items li:not(:last-child) {
 		margin-right: 38px;
+	}
+
+	.nav .menu-items li.login-button {
+		margin-right: 0;
 	}
 }
 </style>

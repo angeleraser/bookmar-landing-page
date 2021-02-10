@@ -53,6 +53,11 @@ export default {
 	z-index: 10;
 }
 
+.menu-button.active {
+	position: fixed;
+	right: 32px;
+}
+
 .menu-button .line {
 	background-color: var(--very-dark-blue);
 	height: 3px;
