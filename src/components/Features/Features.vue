@@ -8,11 +8,14 @@
 				Recusandae, quidem expedita?
 			</p>
 		</header>
+		<features-tab-panel />
 	</section>
 </template>
 
 <script>
+import FeaturesTabPanel from '../FeaturesTabPanel/FeaturesTabPanel.vue';
 export default {
+	components: { FeaturesTabPanel },
 	name: 'Features',
 };
 </script>
