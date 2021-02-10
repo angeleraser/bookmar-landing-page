@@ -34,6 +34,8 @@ export default {
 
 .illustration-wrapper .img {
 	z-index: 1;
+	height: 100%;
+	object-fit: cover;
 }
 
 .illustration-wrapper::after {
@@ -56,7 +58,7 @@ export default {
 	border-radius: 0 100px 100px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
 	.illustration-wrapper {
 		height: 480px;
 	}
