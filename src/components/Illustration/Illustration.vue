@@ -105,10 +105,6 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-	.illustration-wrapper {
-		min-width: 764px;
-	}
-
 	.illustration-wrapper .img {
 		position: absolute;
 	}
@@ -123,6 +119,10 @@ export default {
 }
 
 @media screen and (min-width: 1280px) {
+	.illustration-wrapper {
+		min-width: 764px;
+	}
+
 	.feature-item .img {
 		padding-left: 0;
 	}

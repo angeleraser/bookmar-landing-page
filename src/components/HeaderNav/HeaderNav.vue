@@ -279,6 +279,10 @@ export default {
 	.nav .menu-items li:not(:last-child) {
 		margin-right: 28.5px;
 	}
+
+	.nav .menu-items li.login-button {
+		margin-right: 0;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -296,10 +300,6 @@ export default {
 
 	.nav .menu-items li:not(:last-child) {
 		margin-right: 38px;
-	}
-
-	.nav .menu-items li.login-button {
-		margin-right: 0;
 	}
 }
 </style>
