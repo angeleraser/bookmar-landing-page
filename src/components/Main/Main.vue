@@ -1,13 +1,15 @@
 <template>
 	<main class="main">
 		<features />
+		<download-extension />
 	</main>
 </template>
 
 <script>
+import DownloadExtension from '../DownloadExtension/DownloadExtension.vue';
 import Features from '../Features/Features.vue';
 export default {
-	components: { Features },
+	components: { Features, DownloadExtension },
 	name: 'AppMain',
 };
 </script>
