@@ -5,6 +5,7 @@
 
 	/* Neutral */
 	--grayish-blue: hsl(229, 8%, 60%);
+	--light-grayish-blue: #dfe0e5;
 	--tiny-gray: #f8f8f8;
 	--white: #ffffff;
 	--very-dark-blue: hsl(229, 31%, 21%);
