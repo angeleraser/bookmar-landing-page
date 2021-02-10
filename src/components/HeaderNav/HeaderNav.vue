@@ -137,7 +137,7 @@ export default {
 }
 
 .nav.fixed {
-	padding: 48px 32px;
+	min-height: 101px;
 }
 
 .nav .app-logo {

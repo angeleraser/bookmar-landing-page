@@ -55,7 +55,7 @@ export default {
 
 .menu-button.active {
 	position: fixed;
-	top: 38px;
+	top: 42.5px;
 	right: 32px;
 }
 
