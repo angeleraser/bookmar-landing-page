@@ -92,6 +92,7 @@ export default {
 @media screen and (min-width: 768px) {
 	.section-info {
 		margin: 50px 0 0;
+		align-items: flex-start;
 	}
 
 	.section-info h1 {
