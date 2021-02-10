@@ -35,7 +35,6 @@ export default {
 	font-family: 'Rubik', sans-serif;
 	font-weight: var(--fw-bold);
 	justify-content: center;
-	letter-spacing: 2px;
 	min-width: 112px;
 	padding: 12px 24px;
 	transition: all 0.1s linear;
