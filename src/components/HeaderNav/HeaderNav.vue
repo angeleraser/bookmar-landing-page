@@ -226,6 +226,7 @@ export default {
 		display: flex;
 		flex-direction: row;
 		height: auto;
+		width: auto;
 		justify-content: flex-end;
 		padding: 0;
 		position: static;
