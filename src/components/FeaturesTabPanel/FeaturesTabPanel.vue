@@ -29,6 +29,7 @@ export default {
 		},
 		selectTab(tab) {
 			this.selectedTab = tab;
+			this.$emit('getSelectedTabName', this.selectedTab);
 		},
 	},
 };

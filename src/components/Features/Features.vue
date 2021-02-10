@@ -8,15 +8,27 @@
 				Recusandae, quidem expedita?
 			</p>
 		</header>
-		<features-tab-panel />
+		<features-tab-panel v-on:getSelectedTabName="handleTabClick" />
+		<features-tabs v-bind:selectedTab="selectedTab" />
 	</section>
 </template>
 
 <script>
 import FeaturesTabPanel from '../FeaturesTabPanel/FeaturesTabPanel.vue';
+import FeaturesTabs from '../FeaturesTabs/FeaturesTabs.vue';
 export default {
-	components: { FeaturesTabPanel },
+	components: { FeaturesTabPanel, FeaturesTabs },
 	name: 'Features',
+	data() {
+		return {
+			selectedTab: 'simple-bookmarking',
+		};
+	},
+	methods: {
+		handleTabClick(payload) {
+			this.selectedTab = payload;
+		},
+	},
 };
 </script>
 
@@ -24,6 +36,7 @@ export default {
 .features-wrapper {
 	font-family: var(--ff-rubik);
 	width: 100%;
+	padding-bottom: 160px;
 }
 
 .features-wrapper header {
@@ -48,9 +61,6 @@ export default {
 	color: var(--grayish-blue);
 	line-height: 1.7;
 	max-width: 528px;
-}
-
-@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1024px) {
