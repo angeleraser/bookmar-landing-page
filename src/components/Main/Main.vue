@@ -3,6 +3,7 @@
 		<features />
 		<download-extension />
 		<faq-section />
+		<contact-us />
 	</main>
 </template>
 
@@ -10,8 +11,9 @@
 import DownloadExtension from '@/components/DownloadExtension/DownloadExtension.vue';
 import FaqSection from '@/components/FAQ/FaqSection.vue';
 import Features from '@/components/Features/Features.vue';
+import ContactUs from '@/components/ContactUs/ContactUs.vue';
 export default {
-	components: { Features, DownloadExtension, FaqSection },
+	components: { Features, DownloadExtension, FaqSection, ContactUs },
 	name: 'AppMain',
 };
 </script>
