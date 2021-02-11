@@ -128,7 +128,7 @@ export default {
 	}
 
 	.feature-item .illustration-wrapper img {
-		height: 100%;
+		height: 85%;
 	}
 
 	.feature-item.item-1 .illustration-wrapper .img {
