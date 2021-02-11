@@ -1,5 +1,5 @@
 <template>
-	<section class="contact-us">
+	<section id="contact-us" class="contact-us">
 		<h1>
 			<span>35,000 + already joined</span> Stay up-to-date with what we're doing
 		</h1>

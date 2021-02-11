@@ -71,9 +71,16 @@
 
 		<!-- Menu Items -->
 		<ul v-bind:class="classObject" class="menu-items">
-			<li><a href="#">Features</a></li>
-			<li><a href="#">Pricing</a></li>
-			<li><a href="#">Contacts</a></li>
+			<li>
+				<button v-on:click="scrollToSection('features')">Features</button>
+			</li>
+			<li>
+				<button v-on:click="scrollToSection('pricing')">Pricing</button>
+			</li>
+			<li>
+				<button v-on:click="scrollToSection('contact-us')">Contacts</button>
+			</li>
+
 			<li class="login-button">
 				<button-base :color="'normal'">Login</button-base>
 			</li>
@@ -115,6 +122,10 @@ export default {
 	methods: {
 		openMenu(payload) {
 			this.isMenuOpen = payload;
+		},
+		scrollToSection(name) {
+			const section = document.getElementById(name);
+			section.scrollIntoView({ behavior: 'smooth' });
 		},
 	},
 	computed: {
@@ -180,7 +191,7 @@ export default {
 	padding: 24px 0;
 }
 
-.nav .menu-items li a {
+.nav .menu-items li button {
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
@@ -202,7 +213,7 @@ export default {
 	padding: 0 0 10px;
 }
 
-.nav .menu-items li a {
+.nav .menu-items li button {
 	transition: ease all 0.2s;
 }
 
@@ -249,7 +260,7 @@ export default {
 		width: auto;
 	}
 
-	.nav .menu-items li a:hover {
+	.nav .menu-items li button:hover {
 		color: var(--soft-red);
 	}
 

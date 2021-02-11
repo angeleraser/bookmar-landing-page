@@ -73,9 +73,15 @@
 						</svg>
 					</a>
 				</li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Pricing</a></li>
-				<li><a href="#">Contacts</a></li>
+				<li>
+					<button v-on:click="scrollToSection('features')">Features</button>
+				</li>
+				<li>
+					<button v-on:click="scrollToSection('pricing')">Pricing</button>
+				</li>
+				<li>
+					<button v-on:click="scrollToSection('contact-us')">Contacts</button>
+				</li>
 				<li class="social-links">
 					<a href="#" target="_blank" rel="noopener noreferrer"
 						><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
@@ -104,6 +110,12 @@
 <script>
 export default {
 	name: 'AppFooter',
+	methods: {
+		scrollToSection(name) {
+			const section = document.getElementById(name);
+			section.scrollIntoView({ behavior: 'smooth' });
+		},
+	},
 };
 </script>
 
@@ -124,18 +136,18 @@ export default {
 	width: 100%;
 }
 
-.footer nav .menu-items li a,
+.footer nav .menu-items li button,
 .footer li.social-links svg path {
 	transition: all 0.2s ease;
 }
 
-.footer nav .menu-items li a:hover,
+.footer nav .menu-items li button:hover,
 .footer li.social-links svg:hover path {
 	color: var(--soft-red);
 	fill: var(--soft-red);
 }
 
-.footer nav li {
+.footer nav li button {
 	color: var(--white);
 	letter-spacing: 2px;
 	text-transform: uppercase;

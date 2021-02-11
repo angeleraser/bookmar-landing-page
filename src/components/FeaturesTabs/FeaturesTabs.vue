@@ -15,8 +15,7 @@
 				<h2>Bookmark in one click</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate
-					sequi excepturi quis similique, exercitationem veniam quia numquam ea
-					fugiat atque consequuntur!
+					sequi excepturi quis similique, exercitationem!
 				</p>
 				<button-base :color="'blue'">More Info</button-base>
 			</div>
@@ -36,8 +35,7 @@
 				<h2>Intelligent Search</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate
-					sequi excepturi quis similique, exercitationem veniam quia numquam ea
-					fugiat atque consequuntur!
+					sequi excepturi quis similique, exercitationem!
 				</p>
 				<button-base :color="'blue'">More Info</button-base>
 			</div>
@@ -57,8 +55,7 @@
 				<h2>Share your bookmarks</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate
-					sequi excepturi quis similique, exercitationem veniam quia numquam ea
-					fugiat atque consequuntur!
+					sequi excepturi quis similique, exercitationem!
 				</p>
 				<button-base :color="'blue'">More Info</button-base>
 			</div>
@@ -135,6 +132,14 @@ export default {
 @media screen and (min-width: 1024px) {
 	.features-tabs {
 		min-height: 490px;
+	}
+
+	.features-tabs .feature-item p {
+		font-size: 18px;
+	}
+
+	.features-tabs .feature-item h2 {
+		font-size: 28px;
 	}
 
 	.features-tabs .feature-item {

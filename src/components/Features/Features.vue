@@ -1,5 +1,5 @@
 <template>
-	<section class="features-wrapper">
+	<section id="features" class="features-wrapper">
 		<section-header
 			:sectionTitle="'Features'"
 			:description="

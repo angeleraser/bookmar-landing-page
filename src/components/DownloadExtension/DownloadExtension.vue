@@ -1,5 +1,5 @@
 <template>
-	<section class="download-extension">
+	<section id="pricing" class="download-extension">
 		<section-header
 			:sectionTitle="'Download the extension'"
 			:description="
