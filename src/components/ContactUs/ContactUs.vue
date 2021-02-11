@@ -158,6 +158,10 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+	.contact-us {
+		padding: 72px 0;
+	}
+
 	.contact-us form {
 		flex-direction: row;
 		align-items: flex-start;

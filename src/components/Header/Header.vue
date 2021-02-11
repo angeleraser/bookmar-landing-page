@@ -16,6 +16,9 @@ export default {
 
 <style scoped>
 header {
-	position: relative;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 </style>

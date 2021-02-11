@@ -134,6 +134,7 @@ export default {
 	justify-content: space-between;
 	padding: 38px 32px;
 	width: 100%;
+	max-width: 1108px;
 }
 
 .nav.fixed {
@@ -201,6 +202,10 @@ export default {
 	padding: 0 0 10px;
 }
 
+.nav .menu-items li a {
+	transition: ease all 0.2s;
+}
+
 .nav .social-links a:first-child {
 	margin-right: 40px;
 }
@@ -215,7 +220,7 @@ export default {
 
 @media screen and (min-width: 768px) {
 	.nav {
-		padding: 44px;
+		padding: 46px 32px;
 	}
 
 	.nav .app-logo.fixed {
@@ -270,7 +275,8 @@ export default {
 		background-color: var(--white);
 		color: var(--soft-red);
 	}
-	.nav .menu-items li.login-button {
+
+	.nav ul.menu-items li.login-button {
 		margin-right: 0;
 	}
 }
@@ -285,19 +291,7 @@ export default {
 	}
 }
 
-@media screen and (min-width: 1280px) {
-	.nav {
-		padding-left: 87px;
-		padding-right: 87px;
-	}
-}
-
 @media screen and (min-width: 1440px) {
-	.nav {
-		padding-left: 174px;
-		padding-right: 174px;
-	}
-
 	.nav .menu-items li:not(:last-child) {
 		margin-right: 38px;
 	}
