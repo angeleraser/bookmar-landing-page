@@ -111,6 +111,7 @@ export default {
 
 .contact-us form label.invalid {
 	background-color: var(--soft-red);
+	margin-bottom: 18px;
 }
 
 .contact-us form .error-message {
