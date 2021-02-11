@@ -191,5 +191,9 @@ export default {
 		margin: 0 0 36px;
 		font-size: 30px;
 	}
+
+	.contact-us form label.invalid {
+		margin-bottom: 0;
+	}
 }
 </style>
