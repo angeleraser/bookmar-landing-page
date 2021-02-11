@@ -166,7 +166,6 @@ export default {
 .nav .menu-items {
 	align-items: center;
 	background-color: var(--very-dark-blue-alpha);
-	color: var(--white);
 	display: none;
 	flex-direction: column;
 	height: 100vh;
@@ -194,6 +193,7 @@ export default {
 .nav .menu-items li button {
 	letter-spacing: 2px;
 	text-align: center;
+	color: var(--white);
 	text-transform: uppercase;
 }
 
@@ -244,7 +244,6 @@ export default {
 
 	.nav .menu-items {
 		background-color: transparent;
-		color: var(--very-dark-blue);
 		display: flex;
 		flex-direction: row;
 		height: auto;
@@ -252,6 +251,10 @@ export default {
 		justify-content: flex-end;
 		padding: 0;
 		position: static;
+	}
+
+	.nav .menu-items li button {
+		color: var(--very-dark-blue);
 	}
 
 	.nav .menu-items li {
