@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import HeaderNav from '../HeaderNav/HeaderNav.vue';
-import HeaderSection from '../HeaderSection/HeaderSection.vue';
+import HeaderNav from '@/components/HeaderNav/HeaderNav.vue';
+import HeaderSection from '@/components/HeaderSection/HeaderSection.vue';
 export default {
 	components: { HeaderNav, HeaderSection },
 	name: 'AppHeader',

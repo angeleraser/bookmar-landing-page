@@ -1,23 +1,22 @@
 <template>
 	<section class="features-wrapper">
-		<header>
-			<h1>Features</h1>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-				vero, eos harum minus earum repellendus qui aspernatur quos et!
-				Recusandae, quidem expedita?
-			</p>
-		</header>
+		<section-header
+			:sectionTitle="'Features'"
+			:description="
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium quisquam sit officiis velit accusamus?'
+			"
+		/>
 		<features-tab-panel v-on:getSelectedTabName="handleTabClick" />
 		<features-tabs v-bind:selectedTab="selectedTab" />
 	</section>
 </template>
 
 <script>
-import FeaturesTabPanel from '../FeaturesTabPanel/FeaturesTabPanel.vue';
-import FeaturesTabs from '../FeaturesTabs/FeaturesTabs.vue';
+import FeaturesTabPanel from '@/components/FeaturesTabPanel/FeaturesTabPanel.vue';
+import FeaturesTabs from '@/components/FeaturesTabs/FeaturesTabs.vue';
+import SectionHeader from '@/components/SectionHeader/SectionHeader.vue';
 export default {
-	components: { FeaturesTabPanel, FeaturesTabs },
+	components: { FeaturesTabPanel, FeaturesTabs, SectionHeader },
 	name: 'Features',
 	data() {
 		return {
@@ -37,35 +36,5 @@ export default {
 	font-family: var(--ff-rubik);
 	width: 100%;
 	padding-bottom: 160px;
-}
-
-.features-wrapper header {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 44px;
-	padding: 0 32px;
-	text-align: center;
-	width: 100%;
-}
-
-.features-wrapper header h1 {
-	color: var(--very-dark-blue);
-	font-size: 26px;
-	font-weight: 500;
-	margin-bottom: 12px;
-	text-transform: capitalize;
-}
-
-.features-wrapper header p {
-	color: var(--grayish-blue);
-	line-height: 1.7;
-	max-width: 528px;
-}
-
-@media screen and (min-width: 1024px) {
-	.features-wrapper header h1 {
-		font-size: 32px;
-	}
 }
 </style>

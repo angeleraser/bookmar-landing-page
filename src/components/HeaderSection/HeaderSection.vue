@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import ButtonBase from '../Base/Button/ButtonBase.vue';
-import Illustration from '../Illustration/Illustration.vue';
+import ButtonBase from '@/components/Base/Button/ButtonBase.vue';
+import Illustration from '@/components/Illustration/Illustration.vue';
 export default {
 	name: 'HeaderSection',
 	components: { Illustration, ButtonBase },

@@ -2,14 +2,16 @@
 	<main class="main">
 		<features />
 		<download-extension />
+		<faq-section />
 	</main>
 </template>
 
 <script>
-import DownloadExtension from '../DownloadExtension/DownloadExtension.vue';
-import Features from '../Features/Features.vue';
+import DownloadExtension from '@/components/DownloadExtension/DownloadExtension.vue';
+import FaqSection from '@/components/FAQ/FaqSection.vue';
+import Features from '@/components/Features/Features.vue';
 export default {
-	components: { Features, DownloadExtension },
+	components: { Features, DownloadExtension, FaqSection },
 	name: 'AppMain',
 };
 </script>

@@ -1,12 +1,11 @@
 <template>
 	<section class="download-extension">
-		<header>
-			<h1>Download the extension</h1>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-				vero, eos harum minus earum repellendus qui, quidem expedita?
-			</p>
-		</header>
+		<section-header
+			:sectionTitle="'Download the extension'"
+			:description="
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium quisquam sit officiis velit accusamus?'
+			"
+		/>
 		<div class="cards-container">
 			<card-base :browser="{ name: 'Chrome', version: 62 }"
 				><svg xmlns="http://www.w3.org/2000/svg" width="102" height="100">
@@ -63,9 +62,10 @@
 </template>
 
 <script>
-import CardBase from '../Base/Card/CardBase.vue';
+import CardBase from '@/components/Base/Card/CardBase.vue';
+import SectionHeader from '@/components/SectionHeader/SectionHeader.vue';
 export default {
-	components: { CardBase },
+	components: { CardBase, SectionHeader },
 };
 </script>
 
@@ -74,30 +74,6 @@ export default {
 	font-family: var(--ff-rubik);
 	width: 100%;
 	padding-bottom: 160px;
-}
-
-.download-extension header {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 44px;
-	padding: 0 32px;
-	text-align: center;
-	width: 100%;
-}
-
-.download-extension header h1 {
-	color: var(--very-dark-blue);
-	font-size: 26px;
-	font-weight: 500;
-	margin-bottom: 12px;
-	text-transform: capitalize;
-}
-
-.download-extension header p {
-	color: var(--grayish-blue);
-	line-height: 1.7;
-	max-width: 528px;
 }
 
 .download-extension .cards-container {
@@ -112,14 +88,6 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-	.download-extension header h1 {
-		font-size: 32px;
-	}
-
-	.download-extension header {
-		margin-bottom: 0;
-	}
-
 	.download-extension .cards-container {
 		flex-direction: row;
 		justify-content: center;

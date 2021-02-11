@@ -103,7 +103,7 @@
 
 <script>
 import MenuButton from '@/components/MenuButton/MenuButton.vue';
-import ButtonBase from '../Base/Button/ButtonBase.vue';
+import ButtonBase from '@/components/Base/Button/ButtonBase.vue';
 export default {
 	components: { MenuButton, ButtonBase },
 	name: 'HeaderNav',
