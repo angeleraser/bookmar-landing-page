@@ -143,7 +143,7 @@ export default {
 	}
 
 	.section-info h1 {
-		font-size: 58px;
+		font-size: 54px;
 	}
 }
 </style>
