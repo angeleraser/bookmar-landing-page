@@ -74,7 +74,7 @@ export default {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	max-width: 400px;
+	max-width: 405px;
 }
 
 .contact-us {
@@ -88,8 +88,8 @@ export default {
 .contact-us h1 {
 	color: var(--white);
 	font-size: 26px;
-	font-weight: var(--fw-bold);
 	margin: 0 0 30px;
+	font-weight: var(--fw-bold);
 	text-align: center;
 }
 
@@ -101,9 +101,11 @@ export default {
 }
 
 .contact-us form label {
-	padding: 2px 2px;
 	background-color: transparent;
 	border-radius: 6px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 2px 2px;
 	position: relative;
 }
 
@@ -112,11 +114,17 @@ export default {
 }
 
 .contact-us form .error-message {
-	font-size: 10px;
+	background-color: var(--soft-red);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	bottom: 0;
 	color: var(--white);
-	font-weight: var(--fw-bold);
+	font-size: 10px;
 	font-style: italic;
+	font-weight: var(--fw-bold);
 	padding: 4px;
+	position: absolute;
+	transform: translateY(100%);
 	width: 100%;
 }
 
@@ -124,7 +132,7 @@ export default {
 	border-radius: 4px;
 	border: none;
 	color: var(--very-dark-blue);
-	height: 42px;
+	height: 48px;
 	outline: none;
 	padding: 0 35px 0 20px;
 	width: 100%;
@@ -139,13 +147,13 @@ export default {
 	position: absolute;
 	right: 14px;
 	top: 50%;
-	transform: translateY(calc(-50% - 10px)) scale(0);
+	transform: translateY(-50%) scale(0);
 	transition: 0.2s ease all;
 	transform-origin: 50% 20px;
 }
 
 .contact-us label.invalid .icon-error {
-	transform: translateY(calc(-50% - 10px)) scale(1);
+	transform: translateY(-50%) scale(1);
 }
 
 .contact-us form label input:focus {
@@ -164,7 +172,7 @@ export default {
 
 	.contact-us form {
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: stretch;
 	}
 
 	.contact-us form .button-base {

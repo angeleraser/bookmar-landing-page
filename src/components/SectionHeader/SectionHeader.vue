@@ -53,6 +53,12 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
+	.section-header p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
 	.section-header h1 {
 		font-size: 32px;
 	}

@@ -50,20 +50,22 @@ export default {
 }
 
 .section-info {
+	align-items: center;
+	align-self: flex-end;
 	font-family: var(--ff-rubik);
 	margin: 100px 0 0;
+	max-width: 1108px;
 	padding: 0 32px;
 	text-align: center;
-	align-items: center;
 }
 
 .section-info h1 {
 	color: var(--very-dark-blue);
 	font-size: 32px;
 	font-weight: var(--fw-bold);
+	margin-bottom: 12px;
 	text-transform: capitalize;
 	width: 100%;
-	margin-bottom: 12px;
 }
 
 .section-info p {
@@ -117,22 +119,23 @@ export default {
 	.section-info {
 		text-align: left;
 	}
+
+	.section-info h1 {
+		font-size: 46px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
+	.section-info {
+		padding: 0 0 0 87px;
+		margin: 0;
+		align-self: center;
+	}
+
 	.header-section {
 		flex-direction: row-reverse;
 		align-items: center;
 		margin-top: 68px;
-	}
-
-	.section-info {
-		padding: 0 0 0 87px;
-		margin: 0;
-	}
-
-	.section-info h1 {
-		font-size: 48px;
 	}
 }
 
