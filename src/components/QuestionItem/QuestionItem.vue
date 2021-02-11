@@ -82,7 +82,6 @@ export default {
 <style scoped>
 .question-item {
 	align-items: flex-start;
-	border-bottom: 1px solid var(--light-grayish-blue);
 	border-top: 1px solid var(--light-grayish-blue);
 	display: flex;
 	flex-direction: column;
@@ -91,6 +90,14 @@ export default {
 	height: 72px;
 	overflow: hidden;
 	transition: height 0.4s ease;
+}
+
+.question-item:first-child {
+	border-bottom: none;
+}
+
+.question-item:last-of-type {
+	border-bottom: 1px solid var(--light-grayish-blue);
 }
 
 .question-item header {
